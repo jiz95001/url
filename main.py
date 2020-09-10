@@ -6,4 +6,11 @@ data = {'id':  ['1', '2','3','4','5'],
 
 df = pd.DataFrame(data) #olumns = ['First Column Name','Second Column Name',...])
 
+def intersection(lst1, lst2): 
+    l= list(set(lst1) & set(lst2))
+    if len(l) > 0:
+       return True
+    else:
+       return False
+    
 print (df)
